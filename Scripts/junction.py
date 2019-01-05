@@ -26,10 +26,12 @@ class Junction(object):
 		self.vehicleVectarr = [[], [], [], []]
 		self.isFirstPhase = True
 		self.green = 1
+		#self.current_totals=30*np.ones(4)
 		self.QaNum = 30
 		self.QbNum = 30
 		self.QcNum = 30
 		self.QdNum = 30
+		#self.current_partials=10*np.ones(30)
 		self.Qab = 10
 		self.Qac = 10
 		self.Qad = 10
@@ -42,6 +44,7 @@ class Junction(object):
 		self.Qda = 10
 		self.Qdb = 10
 		self.Qdc = 10
+		#self.fraction_memory=1/3.0*np.ones(30)
 		self.visitNum = 0
 		self.neighbours = []
 		self.phaseMap = phaseMap
